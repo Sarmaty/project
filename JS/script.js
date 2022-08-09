@@ -57,40 +57,62 @@
 
 
 
-const answers = [];
+// const answers = [];
 
-answers [0] = prompt('What your name?');
-answers [1] = prompt('What your lastname?');
-answers [2] = prompt('How old are you?');
+// answers [0] = prompt('What your name?');
+// answers [1] = prompt('What your lastname?');
+// answers [2] = prompt('How old are you?');
 
-console. log(typeof(answers));
-
-
-const category = 'toys';
-
-console. log(`https://someurl.com/${category}/5`);
-
-const user = "Ivan"
-
-alert(`Hello, ${user}`);
+// console. log(typeof(answers));
 
 
-                                            // Lesson 15
+// const category = 'toys';
+
+// console. log(`https://someurl.com/${category}/5`);
+
+// const user = "Ivan"
+
+// alert(`Hello, ${user}`);
+
+
+//                                             // Lesson 15
 
 
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
-// incr++;
-// decr--;
+// // incr++;
+// // decr--;
 
-console. log(++incr);
-console. log(--decr);
+// console. log(++incr);
+// console. log(--decr);
 
-console. log(2+2*2 !== "6");
+// console. log(2+2*2 !== "6");
 
-const isChecked = true,
-      isClose = true;  
+// const isChecked = true,
+//       isClose = true;  
 
-console. log(isChecked && isClose);
+// console. log(isChecked && isClose);
+
+const  numberOfFilms = +prompt('How many movies do you was watch?','');
+
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const  a = prompt('One of the last movies You watched',''),
+       b = prompt('How much would you rate it',''),
+       c = prompt('One of the last movies You watched',''),
+       d = prompt('How much would you rate it','');
+
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console. log(personalMovieDB);
